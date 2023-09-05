@@ -1,0 +1,218 @@
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    background: linear-gradient(180deg, #022f5f 0%, #058a50 100%)
+}
+.card2 {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    background: linear-gradient(180deg, #0573e8 0%, #04f9ab 100%);
+}
+  .card:hover {
+    box-shadow: 4px 16px 16px 4px rgba(0,0,0,0.2);
+  }
+  .intro:hover{
+    box-shadow: 4px 8px 16px 4px rgba(0,0,0,0.2);
+  }
+  .container {
+    display: flex;
+    color: aliceblue;
+    padding: 2px 16px;
+    height: auto;
+    /* width: 10px; */
+
+  }
+  /* #header{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+  }
+  #cardholder{
+    margin-top: 10px;
+    margin-right: 20%;
+     
+  } */
+
+  .lat{
+    color: #dadcde;
+    font-family: 'Merriweather', serif;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.long{
+    color: #d0d2d3;
+    font-family: 'Merriweather', serif;
+    flex-direction: column;
+    align-items: center;
+}
+.city{
+    color: #eef2f5;
+    font-family: 'Merriweather', serif;
+    flex-direction: column;
+    align-items: center;
+}
+.intro{
+    display: flex;
+     justify-content: right;
+    position: relative;
+  width: 90%;
+    /* height: 100vh; */
+    justify-content: center;
+    align-items: center;
+    /* background: linear-gradient(180deg, #022f5f 0%, #04012a 100%); */
+    background: linear-gradient(#4a8daf,#264861);
+    flex-direction: column;
+    border-radius: 5px;
+    /* background-color: #141414; */
+    
+}
+.intro2{
+    
+    position: relative;
+    /* height: 100vh; */
+    /* justify-content: center; */
+    align-items: center;
+    background: linear-gradient(180deg, #9B09E0 0%, #1036e1 100%);
+    flex-direction: column;
+    border-radius: 10px;
+}
+.curr{
+    justify-content: center;
+}
+ body {
+    /* background-color: #000; */
+	/* background: linear-gradient(188deg, #052748); */
+    /* background-size: 400% 400%; */
+	/* animation: gradient 5s ease infinite; */
+    background: linear-gradient(180deg, #022f5f 0%, #04012a 100%);
+    /* background-color: #121212; */
+	/* height: 100vh; */
+}  
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+td{
+    padding:5px
+}
+.car{
+    align-items: center;
+    flex-direction: column;
+}
+.car2{
+    color: rgb(122, 0, 104);
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-fluid{
+    width: auto;
+}
+.text-fill{
+    font-family: 'Lato', sans-serif;
+    font-size: 5vw;
+    position: relative;
+    color: #252839;
+    -webkit-text-stroke: 0.3vw #383d52;
+}
+.text-fill::before{
+    content: attr(data-title);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #01fe87;
+    -webkit-text-stroke: 0vw #383d52;
+    transition: all 1s ease-in-out;
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+    animation-iteration-count: 0.7;
+}
+@keyframes animate{
+    0%,10%,100%{
+        width: 0;
+    }
+    70%{
+        width: 100%;
+    }
+}
+.aqi{
+    width: 160px;
+    height: 160px;
+    position: relative;
+}
+.outer{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),-6px -6px 10px -1px rgba(255,255,255,0.7);
+    padding: 20px; 
+}
+.inner{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 1px solid red;
+    box-shadow: inset 4px 4px 6px -1px rgba(0,0,0,0.2),inset -4px -4px 6px -1px rgba(255,255,255,0.7),-0.5px -0.5px 0px rgba(255,255,255,1),0.5px 0.5px 0px rgba(0,0,0,0,15),0px 12px 10px -10px rgba(0,0,0,0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#number{
+    font-weight: 800;
+    color: #555;
+}
+circle{
+    fill:none;
+    /* stroke:green; */
+    stroke-width: 20px;
+    stroke-dasharray: 472;
+    stroke-dashoffset: 472;
+    animation: anim 2s linear forwards;
+}
+svg{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+@keyframes anim{
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
+.tab{
+    width: 45px;
+}
+table{
+    font-weight: 700;
+}
+.ok{
+    align-items: center;
+}
+@media (max-width:1000px) {
+    .cont1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        /* width: 100px; */
+    }
+    
+    
+}
+td{
+    text-align: center;
+}
